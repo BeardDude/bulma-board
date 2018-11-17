@@ -1,15 +1,37 @@
 {
-  "name": "bulma-board-drag-and-drop",
+  "name": "bulma-board",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "description": "Create boards to display lists and also drag and drop items back and forth while maintaing the state of the lists.",
+  "keywords": [
+    "bulma",
+    "board",
+    "bulma-board",
+    "drag and drop",
+    "dnd bulma",
+    "cards bulma",
+    "card",
+    "trello clone",
+    "trello"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Raghavendran Ramesh",
+    "email": "ramesh.raghaven@gmail.com"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -21,5 +43,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "babel-cli": "^6.26.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  }
 }
