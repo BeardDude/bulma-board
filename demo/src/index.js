@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { DragAndDropBoard } from "bulma-board";
+import { DragAndDropBoard } from "react-bulma-board";
 import "./bulma.css";
 
 class App extends Component {

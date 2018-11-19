@@ -1,5 +1,5 @@
 {
-  "name": "bulma-board",
+  "name": "react-bulma-board",
   "version": "0.1.0",
   "description": "Create boards to display lists and also drag and drop items back and forth while maintaing the state of the lists.",
   "keywords": [
@@ -17,6 +17,10 @@
   "author": {
     "name": "Raghavendran Ramesh",
     "email": "ramesh.raghaven@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeardDude/bulma-board.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
